@@ -3,6 +3,7 @@ import axios from 'axios';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
+    console.log("test 1");
     const { message } = req.body;
 
     try {

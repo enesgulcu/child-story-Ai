@@ -12,10 +12,3 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Response {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  userId    String
-  question  String
-  answer    String
-  timestamp DateTime @default(now())
-}
